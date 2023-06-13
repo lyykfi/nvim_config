@@ -25,8 +25,12 @@ return {
   -- change trouble config
   {
     "folke/trouble.nvim",
+    ependencies = { "nvim-tree/nvim-web-devicons" },
     -- opts will be merged with the parent spec
-    opts = { use_diagnostic_signs = true },
+    opts = {
+      use_diagnostic_signs = true,
+      auto_open = false,
+    },
   },
 
   -- add symbols-outline
